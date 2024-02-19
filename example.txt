@@ -1,0 +1,35 @@
+print("ランダムな数字は" + answer + "でした")    answer = sys.stdin.buffer.readline().decode().strip()
+    sys.stdout.flush()
+    print("ランダムな数字と一致しませんでした、もう一度入力してください")
+while answer != random_number:
+
+answer = sys.stdin.buffer.readline().decode().strip()
+sys.stdout.flush()
+print(random_number)
+print("最大値以下最小値以下の数字がランダムで設定されたのであててください")
+
+random_number = str(random_number)
+random_number = random.randint(min, max)
+
+max = int(max)
+min = int(min)
+
+print('最大値 ' + max.decode() + '最小値 ' + min.decode())
+print("最大値以下なので大丈夫")
+    max = sys.stdin.buffer.readline()
+    sys.stdout.flush()
+    print("最小値のほうが大きいので入力し直し")
+while min > max:
+
+max = sys.stdin.buffer.readline()
+sys.stdout.flush()
+sys.stdout.buffer.write(b'please max number\n')
+
+min = sys.stdin.buffer.readline()
+sys.stdout.flush()
+sys.stdout.buffer.write(b'please min number\n')
+
+# random.randint
+
+import sys
+import random
