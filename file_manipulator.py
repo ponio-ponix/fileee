@@ -15,6 +15,7 @@ def validate_input(input_value):
         return True
 
 
+
 while True:
     if validate_input(sys.argv):
         print("バリデーションチェックはOKです")
